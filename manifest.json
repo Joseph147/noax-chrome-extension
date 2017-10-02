@@ -1,0 +1,11 @@
+{
+  "name": "Noax",
+  "version": "1.0.0",
+  "description": "Builds a wall around fake news and makes them pay for it.",
+  "permissions": ["webRequest", "webRequestBlocking"],
+  "background": {
+    "scripts": ["noax.js"]
+  },
+
+  "manifest_version": 2
+}
