@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "Builds a wall around fake news and makes them pay for it.",
   "permissions": ["webRequest", "webRequestBlocking"],
-  "background": {
-    "scripts": ["noax.js"]
-  },
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["node_modules/jquery/dist/jquery.min.js", "noax.js"]
+  }],
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
 
   "manifest_version": 2
 }
