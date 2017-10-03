@@ -1,0 +1,22 @@
+{
+  "name": "noax-chrome-extension",
+  "version": "1.0.0",
+  "description": "the chrome extension for noax.",
+  "main": "noax.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VINH2017/noax-chrome-extension.git"
+  },
+  "author": "Kaioru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VINH2017/noax-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/VINH2017/noax-chrome-extension#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
