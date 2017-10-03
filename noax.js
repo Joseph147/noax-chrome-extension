@@ -1,8 +1,9 @@
 var url = location.href;
+var protocol = url.split("/")[0];
 
-$.getJSON('http://noax.dev/api/count/' + encodeURIComponent(url),
+$.getJSON(protocol + '//noax.kaioru.co/api/count/' + encodeURIComponent(url),
   function(data) {
-    if (data.block) {
+    if (data.block || data.flagged) {
       alert('This page has been reported ' + data.count + ' times.')
     }
   });
